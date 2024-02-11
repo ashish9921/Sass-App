@@ -1,0 +1,43 @@
+$small: 320px;
+$medium: 640px;
+$large: 1024px;
+
+.action-bar {
+	display: flex;
+	align-items: center;
+	gap: 38px;
+	border-radius: 10px;
+	padding: 0.875rem 0.875rem 0.875rem 1.5rem;
+	width: 100%;
+	height: fit-content;
+	color: var(--light-white);
+	background-color: var(--dark-400);
+
+	h1 {
+		display: none;
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: 1px;
+
+		@media screen and (min-width: $medium) {
+			display: flex;
+			align-items: flex-end;
+			gap: 8px;
+		}
+	}
+
+	h2 {
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	div {
+		.app-icon {
+			margin-right: 8px;
+		}
+	}
+
+	.app-button {
+		margin: 0 0 0 auto;
+	}
+}

@@ -1,0 +1,25 @@
+.int-elem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+	border-radius: 10px;
+	padding: 0.5rem;
+	width: fit-content;
+	height: fit-content;
+	font-size: 13px;
+	font-weight: 700;
+	color: var(--dark-500);
+	background-color: var(--light-500);
+
+	&:hover {
+		background-color: #cfd7ff;
+	}
+
+	.app-icon {
+		transform: rotateZ(90deg);
+	}
+	span {
+		width: 22px;
+	}
+}

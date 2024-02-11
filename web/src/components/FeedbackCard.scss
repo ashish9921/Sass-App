@@ -1,0 +1,29 @@
+.feedback {
+	display: flex;
+	gap: 40px;
+	border-radius: 10px;
+	padding: 1.75rem 2rem;
+	background-color: var(--light-white);
+	max-width: 825px;
+
+	&:hover {
+		.content > h1 {
+			color: var(--primary-500);
+		}
+	}
+
+	.content {
+		flex: 1;
+
+		h1 {
+			font-size: 18px;
+			font-weight: 700;
+			color: var(--dark-500);
+		}
+
+		p {
+			padding: 0.25rem 0 0.75rem 0;
+			color: var(--dark-600);
+		}
+	}
+}

@@ -1,0 +1,146 @@
+$small: 320px;
+$medium: 640px;
+$large: 1024px;
+
+main#suggestion {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 69.375rem;
+	height: 100vh;
+
+	@media screen and (min-width: $medium) {
+		flex-direction: row;
+	}
+
+	aside {
+		display: none;
+
+		@media screen and (min-width: $medium) {
+			display: flex;
+			gap: 24px;
+			flex-direction: column;
+			max-width: 15.9375rem;
+		}
+
+		.title-board {
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			justify-content: flex-end;
+			border-radius: 10px;
+			aspect-ratio: 1.86;
+			background-image: url(../assets/bg-gradient.jpg);
+			background-size: cover;
+			color: var(--light-white);
+			padding: 1.5rem;
+			vertical-align: bottom;
+
+			@media screen and (min-width: $medium) {
+				flex: none;
+			}
+
+			h2 {
+				margin: auto 0 0 0;
+				font-weight: 700;
+				font-size: 20px;
+				letter-spacing: 1px;
+			}
+
+			h3 {
+				font-weight: 500;
+				font-size: 15px;
+				opacity: 0.75;
+			}
+		}
+
+		.category-board {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			border-radius: 10px;
+			padding: 1.5rem;
+			background-color: var(--light-white);
+			max-width: 224px;
+
+			@media screen and (min-width: $medium) {
+				max-width: 100%;
+			}
+		}
+
+		.roadmap-board {
+			display: grid;
+			grid-template-columns: 1fr min-content;
+			grid-auto-flow: row;
+			gap: 8px;
+			padding: 1.5rem;
+			color: var(--dark-600);
+			background-color: var(--light-white);
+
+			h2 {
+				font-size: 18px;
+				font-weight: 700;
+				margin: 0 0 1rem 0;
+			}
+
+			a {
+				color: var(--primary-500);
+				font-size: 13px;
+				font-weight: 600;
+				text-decoration: underline;
+			}
+
+			.count {
+				justify-self: flex-end;
+				font-weight: 700;
+			}
+		}
+	}
+
+	section {
+		flex: 1;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		height: 100%;
+
+		.empty-state {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: var(--light-white);
+			padding: 6rem;
+			border-radius: 10px;
+
+			img {
+				width: 128px;
+			}
+
+			h1 {
+				margin: 3.375rem 0 1rem 0;
+				font-size: 24px;
+				font-weight: 700;
+				color: var(--dark-500);
+			}
+			p {
+				margin: 1rem 0 3rem 0;
+				max-width: 25.625rem;
+				text-align: center;
+				color: var(--dark-600);
+			}
+		}
+
+		.feedbacks {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+			height: 100%;
+			overflow-y: scroll;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+main#feedback-details {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 730px;
+	height: 100vh;
+
+	.action-bar {
+		align-items: center;
+		gap: 8px;
+		padding-left: 0;
+		padding-right: 0;
+		background: transparent;
+
+		&:first-child {
+			color: var(--dark-600);
+			font-size: 14px;
+			font-weight: 700;
+		}
+	}
+
+	h3 {
+		color: var(--dark-500);
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.comments {
+		border-radius: 10px;
+		padding: 1.5rem 2.125rem;
+		background-color: var(--light-white);
+	}
+
+	.comment-box {
+		border-radius: 10px;
+		padding: 1.5rem 2.125rem;
+		background-color: var(--light-white);
+
+		div {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.status {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+
+	.indicator {
+		border-radius: 50%;
+		width: 0.5rem;
+		height: fit-content;
+		aspect-ratio: 1;
+		background-color: var(--status-planned);
+	}
+
+	.label {
+		white-space: nowrap;
+		text-transform: capitalize;
+	}
+}
