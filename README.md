@@ -13,7 +13,6 @@
 
 
 ### Steps
-- run the setup.sh file
 - create .env file in server and web Folder 📂  for server .env write PORT=3000 /////   and for web write VITE_API_URL=http://localhost:3000
 - to run go to server and using terminal write npm run dev
 - to run front-end go to web folder and write npm run dev  sever will run on localhost 3000
